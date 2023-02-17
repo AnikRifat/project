@@ -1,0 +1,8 @@
+@mixin aw3_transition($myproperty) {
+    -webkit-transition: $myproperty;
+    -moz-transition: $myproperty;
+    -ms-transition: $myproperty;
+    -o-transition: $myproperty;
+    transition: $myproperty;
+
+} 

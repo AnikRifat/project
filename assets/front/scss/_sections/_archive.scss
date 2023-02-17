@@ -1,0 +1,30 @@
+.wp-news_archive-post{
+	
+
+	display: flex;
+	margin: 8px 0px;
+    background-color: #F0F0ED; 
+
+
+	.archive-feature-image{
+
+		width: 40%;
+	}
+	.archive-feature-content{
+		width: 60%;
+		padding:10px;
+
+		h3{
+			font-size: 18px;  
+
+		}
+		p{
+			font-size: 15px; 
+ 
+		}
+		span{
+			font-size:13px;
+			color: $gray_color;
+		}
+	}
+}

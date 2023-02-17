@@ -1,0 +1,149 @@
+.top-section-one, .wp-news_single-post{
+
+    .top-section-big{
+         position: relative; 
+         h3{
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            font-weight: bold;
+            font-size: 25px;
+            color:$white_color; 
+         }
+     }
+     .top-section-right{
+
+     }
+     .nav-tabs {
+         border: 0px; 
+     }
+     .nav-tabs .nav-link{
+
+     	background-color: $title_color;
+     	color: $white_color;
+      border: 0px solid $primary_color;
+     } 
+     .nav-link:focus {
+
+         text-decoration: none; 
+         color: $gray_color;
+    } 
+   .tab-title-wpnews{
+      font-size:22px;
+   }
+}
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+    width:48%;
+    text-align: center;
+} 
+
+.nav-tabs {
+    .nav-link{
+        border-radius: 0px;
+    }
+    a.nav-link.active.top-tab-title {
+        background: $black_color !important;
+        color: $gray_color;
+    }
+} 
+
+  
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+     
+     .top-section-one,.wp-news_single-post { 
+           .featured-post-title:first-child{ 
+              margin: 0;
+           } 
+        .top-sec-ipad:nth-child(1){
+              padding-right: 1px!important;
+
+        }
+        .top-sec-ipad:nth-child(2){
+              padding-left: 5px!important;           
+        }
+
+        .top-sec-middle{
+           
+
+           .featured-post-title{ 
+              font-size: 15px;
+           } 
+        }
+
+        .tab-content{ 
+            .tab-title-wpnews{ 
+                h3{  
+                  font-size: 16px;
+                  margin-left: 8px;   
+                } 
+           }
+           .tab-thumbs-wpnews{} 
+        } 
+        .margin-bt{
+          padding-right:0px;
+        }
+     }
+     
+}
+
+
+/*    Mobile Layout: 320px.
+    Gutters: 24px.
+    Outer margins: 34px.
+    Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+  .top-section-one{
+            
+      .featured-post-title:first-child{ 
+         margin: 0;
+      } 
+        .top-sec-ipad:nth-child(1){
+              padding-right: 1px!important;
+
+        }
+        .top-sec-ipad:nth-child(2){
+              padding-left: 5px!important;           
+        }
+
+        .top-sec-middle{
+           
+
+           .featured-post-title{
+
+              font-size: 15px;
+           } 
+        }
+
+        .tab-content{
+            
+            .tab-title-wpnews{
+
+                h3{ 
+
+                  font-size: 20px;
+                  margin-top: 5px;
+                  margin-left: 10px;
+                       
+                }
+                 
+           }
+           .tab-thumbs-wpnews{}
+ 
+
+        } 
+        .margin-bt{
+          padding-right:0px;
+        }
+
+   
+     }
+
+
+}

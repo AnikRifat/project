@@ -1,0 +1,58 @@
+.gallery-area{
+	background-color: $border-color;
+	padding-top: 50px;
+} 
+
+ .btn:focus, .btn:active, button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+/*===================video modal==============*/
+.gallery-area{ 
+
+.modal-dialog {
+      max-width: 800px; 
+      margin: 30px auto;
+  }
+
+.wp-news_video-item{
+	cursor: pointer;
+}
+
+.modal{
+ background-color: #fffbfbb8;
+}
+
+.modal-body {
+  position:relative; 
+  padding:10px;
+
+   a{
+      text-align: center; 
+      margin:0 auto;
+   }
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  opacity:1;
+}
+
+
+
+}

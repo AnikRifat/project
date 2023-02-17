@@ -1,0 +1,105 @@
+/* /.footer top */
+.footer-area-one {
+  color: $white_color;
+  font-size: 1.1rem;
+}
+.footer-top {
+  background-color: $black_color;
+  padding-top: 40px;
+  @media only screen and (max-width: 479px) {
+    display: none;
+  }
+}
+ul.footer-link {
+  -webkit-column-count: 5;
+  -moz-column-count: 5;
+  column-count: 5;
+  @media only screen and (max-width: 767px) {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+
+  a {
+    display: block;
+    padding: 6px 15px;
+    color: $white_color;
+    &:hover {
+      color: $primary_color;
+    }
+  }
+}
+/* /. vertical line */
+.v-line {
+  @include aw3_vline($white_color);
+
+}
+.footer-v-line {
+  margin-top: 40px;
+}
+
+/* /.footer bottom */
+.footer-bottom {
+  background-color: $black_color;
+  padding: 40px 0;
+
+  .footer-logo {
+    padding: 20px 10px;
+    display: flex;
+    
+    img {
+      margin: auto;
+    } /* /.footer logo */
+  }
+}
+
+.editor-area {
+  p,
+  .editor-email {
+    padding: 5px 10px;
+    color: $white_color;
+
+    span {
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+} /* /.editor text area */
+
+.footer-address {
+  @media only screen and (max-width: 768px) {
+    margin-top: 10px;
+  }
+  &-bn,
+  &-en {
+    line-height: 2.3rem;
+
+    @media only screen and (max-width: 768px) {
+      padding: 0 20px 0 10px;
+    }
+  }
+} /* /.footer address area */
+
+.footer-credit {
+  background-color: $footer_color;
+
+  .texts-left {
+    padding: 15px;
+    text-align: left;
+  }
+  .texts-right {
+    padding: 15px;
+    text-align: right;
+
+    a {
+      color: $primary_color;
+    }
+  }
+  .texts-left,
+  .texts-right {
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+      padding: 10px;
+    }
+  }
+}

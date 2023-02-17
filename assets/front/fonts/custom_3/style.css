@@ -1,0 +1,8 @@
+@font-face {font-family: "Shonar Bangla";
+  src: url("53d7c27d36716a2e787903901e194932.eot"); /* IE9*/
+  src: url("53d7c27d36716a2e787903901e194932.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("53d7c27d36716a2e787903901e194932.woff2") format("woff2"), /* chrome、firefox */
+  url("53d7c27d36716a2e787903901e194932.woff") format("woff"), /* chrome、firefox */
+  url("53d7c27d36716a2e787903901e194932.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("53d7c27d36716a2e787903901e194932.svg#Shonar Bangla") format("svg"); /* iOS 4.1- */
+}

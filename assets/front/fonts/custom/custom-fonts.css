@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Noto Sans Bengali';
+  src: url('Noto Sans Bengali.eot');
+  src: url('Noto Sans Bengali.eot?#iefix') format('embedded-opentype'),
+       url('Noto Sans Bengali.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSansBengali';
+  src: url('NotoSansBengali.svg#NotoSansBengali') format('svg'),
+       url('NotoSansBengali.ttf') format('truetype'),
+       url('NotoSansBengali.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,28 @@
+@mixin aw3_transition($myproperty) {
+  -webkit-transition: $myproperty;
+  -moz-transition: $myproperty;
+  -ms-transition: $myproperty;
+  -o-transition: $myproperty;
+  transition: $myproperty;
+}
+@mixin aw3_opacity($myproperty) {
+  -webkit-opacity: $myproperty;
+  -moz-opacity: $myproperty;
+  -ms-opacity: $myproperty;
+  -o-opacity: $myproperty;
+  opacity: $myproperty;
+}
+@mixin aw3_filter($filter-type,$filter-amount) { 
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+@mixin aw3_vline($color) {
+  height: 1px;
+  width: 96%;
+  background-color: $color;
+}
+

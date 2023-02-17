@@ -1,0 +1,50 @@
+.categories-sec-one {
+}
+.cat-title {
+  font-size: 1.6rem;
+}
+
+.featured-post {
+}
+.featured-post-details {
+  &-title {
+    font-size: 1.3rem;
+    padding: 0 0.5em;
+    margin-bottom: 10px;
+  }
+  &-desc {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+}
+.cat-posts {
+  overflow: hidden;
+  height: auto;
+  padding: 10px 0;
+  &-img {
+    img {
+      float: left;
+      width: 30%;
+      margin-right: 10px;
+      border: 1px solid #d2d5db;
+      padding: 2px;
+      background: #fff;
+    }
+  }
+  &-title {
+    font-size: 1.1rem;
+    line-height: 23px;
+    font-weight: 500;
+    padding: 3px;
+    a {
+      color: $black_color;
+      &:hover {
+        color: $primary_color;
+      }
+    }
+  }
+}
+
+
+
+
