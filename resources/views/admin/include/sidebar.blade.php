@@ -52,7 +52,7 @@
                  --}}
 
 
-
+            @can('Review News')
             <li>
                 <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                     <i class="ti-align-left"></i>
@@ -71,6 +71,8 @@
                     @endcan
                 </ul>
             </li>
+            @endcan
+
             <li>
                 <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                     <i class="ti-align-left"></i>
@@ -101,14 +103,17 @@
                     <span class="hide-menu">tag</span>
                 </a>
                 <ul aria-expanded="false" class="collapse">
+                    @can('Create Tag')
                     <li>
                         <a href="{{ route('tag.create') }}">Create tag</a>
                     </li>
+                    @endcan
                     <li>
                         <a href="{{ route('tag.index') }}">View tag</a>
                     </li>
                 </ul>
             </li>
+            @hasrole('Super Admin')
             <li>
                 <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                     <i class="ti-align-left"></i>
@@ -140,6 +145,8 @@
                     </li>
                 </ul>
             </li>
+            @endrole
+
 
             <li class="nav-small-cap">--- SUPPORT</li>
 

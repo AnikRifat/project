@@ -21,7 +21,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $user = User::paginate(10);
+        $user = User::role('Creator')->paginate(10);
         // $permissionNames = $user->getPermissionNames();
 
         return view('admin.pages.user.index', compact('user'));
@@ -47,6 +47,7 @@ class UserController extends Controller
             'email' => $request->input('email'),
             'password' => Hash::make($request->input('password')),
         ]);
+        $user->assignRole('creator');
         $user->syncPermissions($request->input('permissions', []));
         return redirect()->route('user.index');
     }

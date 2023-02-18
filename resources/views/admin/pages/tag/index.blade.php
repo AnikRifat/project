@@ -54,7 +54,7 @@
                                     <a class="btn btn-primary waves-effect btn-circle waves-light"
                                       href="{{ route('tag.edit',$item->id) }}">
                                         <i class="fa fa-edit"></i> </a>
-                                    <form hidden action="{{ route('tag.delete',$item->id) }}" method="POST"
+                                    <form hidden action="{{ route('tag.destroy',$item->id) }}" method="POST"
                                       id="form{{ $item->id }}">
                                         @csrf
                                         @method('DELETE')

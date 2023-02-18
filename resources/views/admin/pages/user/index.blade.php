@@ -40,6 +40,7 @@
                                 <th>Editor name</th>
                                 <th>Editor email</th>
                                 <th>Editor permissions</th>
+                                <th>Editor Role</th>
                                 <th>Id</th>
 
 
@@ -70,6 +71,11 @@
                                 <td>{{ $item->email }}</td>
                                 <td>@foreach ($item->getPermissionNames() as $permision)
                                     <span class="badge bg-warning rounded-pill">{{ $permision }}</span>
+
+                                    @endforeach
+                                </td>
+                                <td>@foreach ($item->getRoleNames() as $role)
+                                    <span class="badge bg-warning rounded-pill">{{ $role }}</span>
 
                                     @endforeach
                                 </td>

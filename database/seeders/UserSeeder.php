@@ -8,6 +8,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Spatie\Permission\Models\Permission;
+use Spatie\Permission\Models\Role;
 
 class UserSeeder extends Seeder
 {
@@ -27,17 +28,36 @@ class UserSeeder extends Seeder
             'email' => 'superadmin@admin.com',
             'password' => Hash::make('password'),
         ]);
-
+        DB::table('users')->insert([
+            'id' => '2',
+            'name' => 'Admin',
+            'email' => 'admin@admin.com',
+            'password' => Hash::make('password'),
+        ]);
+        DB::table('users')->insert([
+            'id' => '3',
+            'name' => 'Creator',
+            'email' => 'creator@admin.com',
+            'password' => Hash::make('password'),
+        ]);
         // Create 9 normal users
-        for ($i = 1; $i <= 9; $i++) {
+        for ($i = 4; $i <= 9; $i++) {
             DB::table('users')->insert([
                 'name' => 'User ' . $i,
                 'email' => 'user' . $i . '@gmail.com',
                 'password' => Hash::make('password'),
             ]);
         }
-        $user = User::find(1);
-        $permissions = Permission::all();
-        $user->permissions()->sync($permissions);
+        $superadmin = User::find(1);
+        $admin = User::find(2);
+        $creator = User::find(3);
+
+        $superadminrole = Role::find(1);
+        $adminrole = Role::find(2);
+        $creatorrole = Role::find(3);
+
+        $superadmin->assignRole($superadminrole);
+        $admin->assignRole($adminrole);
+        $creator->assignRole($creatorrole);
     }
 }
