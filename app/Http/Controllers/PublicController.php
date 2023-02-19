@@ -14,6 +14,6 @@ class PublicController extends Controller
     public function index()
     {
 
-        return redirect()->route('login');
+        return redirect()->route('admin.index');
     }
 }
